@@ -1,0 +1,30 @@
+Variables:
+name: b1 type:bool value: real idType: var
+name: c type:char value: x idType: var
+name: fx type:float value: 6.5 idType: var
+name: g type: value: uninitialized idType: 
+name: ix type:int value: 1 idType: var
+name: iy type:int value: 900 idType: var
+name: iz type:int value: 30 idType: var
+name: oba type:A value: 0 idType: var
+name: obb type:B value: 0 idType: var
+name: s type:string value: string idType: var
+name: v type:int value: uninitialized idType: var
+name: x type:int value: 60 idType: var
+Classes:
+name: A type:A value: uninitialized idType: class
+	name: g type: int Member of class: A
+		name: z  type: int Parameter of function: g
+	name: x type: int Member of class: A
+	name: y type: int Member of class: A
+name: B type:B value: uninitialized idType: class
+	name: x type: float Member of class: B
+Functions:
+name: bfunc type:int value: 1 idType: func
+	name: b type: bool Parameter of function: bfunc
+	name: f type: float Parameter of function: bfunc
+	name: s type: string Parameter of function: bfunc
+name: f type:int value: 1 idType: func
+	name: z type: int Parameter of function: f
+name: g type:float value: 1.0 idType: func
+	name: z type: int Parameter of function: g

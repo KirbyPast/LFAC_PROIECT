@@ -1,0 +1,26 @@
+Pentru punctul 2:
+
+    Nu pare neaparat greu. Diferenta dintre exemplul profei (LIMBAJ) si ce trb sa facem noi e ca la profa este un singur scope, noi trb sa avem mai multe si imbricate. As zice ca la inceput trebuie sa facem un symTable global, si unul pt fiecare clasa si functie care mai apar. La ala global trb sa fie o stiva de symTable-uri pt blockuri (https://chatgpt.com/share/67798295-cc30-8006-96af-124e79a659ab).
+        a) Aici e fix ce a la profa (LIMBAJ) singura diferenta e ca in IdInfo trb sa bagam si value (pt asta furam chestiile cu $$, $1 etc din EXPEXT.
+        b) Cred ca putem sa o bagam tot in IdInfo. Doar punem cod C la regulile alea de derivare.
+        c) La clase la fel ca la functii.
+    Legat de printare IN ALT FISIER, nu creca trb facut nimica special. Doar schimbat main ul din .y.
+
+
+Pentru punctul 3:
+
+    Multe sunt deja facute din celelalte exemple de la profa.
+        a) La assignment-uri cautam in SymTable-ul curent daca exista variabila.
+        b) Este deja. Verificam daca variabila a fost definita in SymTable-ul nostru sau intr-unul de mai sus din ierarhie (stiva de SymTable-uri)
+        c) Verificam 2 cate 2 tipul de la variabile pe masura ce derivam. Tipul e in SymTable deci ar trebui sa fie ok.
+        d) Asta mi se pare mai ciudat, dar cred ca trb doar sa schimbam ft putin ce e deja la c).
+        e) Asta pare ok-ish. Ma intreb daca trebuie verificat si numarul de variabile?
+    Error messages e ok.
+
+
+Pentru punctul 4:
+
+    Ca prefata mi se pare dubios avand in vedere ca putem deja sa calculam valorile de adevar / valorile in general din chestiile cu $$, $1 etc. Oricum e oleaca dezlegat de LFAC in sine sincer. Pare mai mult sd decat orice. Doar trb bagata o clasa in plus pe langa SymTable. E cam mura in gura in sensul ca iti zice in pdf exact cum trebuie sa arate functia de evaluare. Mai greu e sa faci nodurile in sine dar atat. (https://chatgpt.com/share/67798295-cc30-8006-96af-124e79a659ab) 
+
+
+Asa ca overview la tot din fericire nu mi se pare mai rau ca prima parte. Poate doar oleaca mai greu din cauza chestiei cu arborele de expresii. Dar in rest parca e mult mai ok ca nu mai trb sa ne batem capul cu 15000 de edge case uri. Daca da bine daca nu nu e mult mai ok.
